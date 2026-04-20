@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { Button, Container, Row, Col, Image, Table } from "react-bootstrap";
-import ReactImageMagnify from "react-image-magnify";
+
 
 import Treding from "./homeTreding";
 import ReviewPage from "./Review";
@@ -179,20 +179,13 @@ useEffect(() => {
 
               {/* MAIN IMAGE */}
               <div className="main-image-container">
-                <ReactImageMagnify
-                  {...{
-                    smallImage: {
-                      alt: currentProduct?.productName,
-                      isFluidWidth: true,
-                      src: selectedImage,
-                    },
-                    largeImage: {
-                      src: selectedImage,
-                      width: 1200,
-                      height: 1200,
-                    },
-                  }}
-                />
+                <InnerImageZoom
+  src={selectedImage}
+  zoomSrc={selectedImage}
+  zoomType="hover"
+  zoomScale={1.5}
+  className="main-product-image"
+/>
               </div>
 
             </div>

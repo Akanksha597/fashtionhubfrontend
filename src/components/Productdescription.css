@@ -185,7 +185,24 @@
   cursor: pointer;
   border-radius: 6px;
 }
+.main-product-image {
+  border-radius: 12px;
+  overflow: hidden;
+}
 
+.thumbnail-img {
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: 0.3s;
+}
+
+.thumbnail-img:hover {
+  transform: scale(1.05);
+}
+
+.active-thumb {
+  border: 2px solid green;
+}
 /* MOBILE */
 @media (max-width: 768px) {
   .image-section {
