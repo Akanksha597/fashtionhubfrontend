@@ -130,7 +130,7 @@ const ProfilePage = () => {
 
       {/* PROFILE */}
       {activeTab === "profile" && (
-        <div className="card shadow-lg border-0 p-4">
+        <div className="card shadow-lg border-0 p-4 mb-5">
           <h5 className="mb-4">Personal Details</h5>
 
           <div className="row g-3">

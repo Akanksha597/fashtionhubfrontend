@@ -197,7 +197,7 @@ const PaymentPage = (props) => {
   };
 
   return (
-    <div className="container mt-5 p-4 border rounded shadow-sm bg-light">
+    <div className="container mt-5 p-4 border rounded shadow-sm bg-light py-4">
       <ToastContainer />
       <div className="row">
         {/* Check for user data and addresses */}

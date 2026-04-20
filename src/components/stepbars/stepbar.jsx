@@ -46,7 +46,7 @@ const StepBar = () => {
   };
 
   return (
-    <div className="container mt-5" style={{ maxWidth: '1100px' }}>
+    <div className="container py-5" style={{ maxWidth: '1100px' }}>
       {/* Step Indicator */}
       <div className="d-flex justify-content-between align-items-center mb-4">
         <div
