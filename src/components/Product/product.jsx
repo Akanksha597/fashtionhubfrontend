@@ -86,7 +86,7 @@ const ProductPage = () => {
 
       {/* HERO */}
       <div
-        className="container-ouvercompay"
+        className="container-ouvercompay "
         style={{ backgroundImage: `url(${allProductsImage})` }}
       />
 

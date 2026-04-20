@@ -42,7 +42,7 @@ import './Features.css';
 
 export default function InfoBar() {
   const items = [
-    { icon: <FaPercent />, title: "Discount", sub: "Every week new sales" },
+    
     { icon: <FaUndoAlt />, title: "Return Policy", sub: "Dedicated support" },
     { icon: <FaTruck />, title: "Free Delivery", sub: "For all order above 100" },
     { icon: <RiSecurePaymentLine />, title: "Secure Payment", sub: "100% secure payment" }

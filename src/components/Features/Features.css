@@ -3,7 +3,7 @@
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   padding: 15px 20px;
-  width: 80%;
+  width: 100%;
   margin: 20px auto;
   display: flex;
   justify-content: center;
@@ -29,7 +29,7 @@
   flex: 0 0 auto;        /* prevent shrinking */
   padding: 10px 15px;
   border-right: 1px solid #ddd;
-  min-width: 220px;      /* fixed min width for scrolling */
+  min-width: 200px;      /* fixed min width for scrolling */
 }
 
 .infobar-item:last-child {

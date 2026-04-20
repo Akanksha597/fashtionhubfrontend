@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import "./ImageGrid.css";
 
+// 👉 Your images
+import poster from "../../assets/Imagegrid/poster.jpg";
+
 const images = [
-  "src/assets/Imagegrid/poster.jpg",
+  poster,
   "https://images.unsplash.com/photo-1490481651871-ab68de25d43d",
   "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c",
 ];
@@ -13,16 +16,17 @@ const ImageSwapLayout = () => {
   return (
     <div className="swap-container">
       <div className="swap-grid">
-        
-        {/* BIG IMAGE */}
+
+        {/* LEFT BIG IMAGE */}
         <div className="big-image">
           <img src={mainImage} alt="Main" />
         </div>
 
-        {/* SIDE IMAGES */}
+        {/* RIGHT SIDE IMAGES (ONLY 2) */}
         <div className="side-images">
           {images
-            .filter((img) => img !== mainImage)
+            .filter((img) => img !== mainImage) // remove main image
+            .slice(0, 2) // only 2 images
             .map((img, index) => (
               <div key={index} onClick={() => setMainImage(img)}>
                 <img src={img} alt="thumb" />

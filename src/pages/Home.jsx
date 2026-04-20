@@ -7,7 +7,7 @@ import Homecategory from "../components/category/homecategory";
 // import Deals from "../components/Deals/homedeals";
 import Banner2 from "../components/banner/banner2";
 // import Blog from "./Blogcards/Blog";
-import Features from "../components/Features/Features";
+
 // import Footer from "../components/footer/Footer";
 import Whychoose from "../components/whychoose/whychoose";
 import PromoBanners from "../components/KisanCrate/Home/PromoBanners";
@@ -35,7 +35,7 @@ const Home = () => {
       <Homecategory />
       <ImageGrid />
       <Banner2 />
-     
+    
 
 
       <TodaysOffer />

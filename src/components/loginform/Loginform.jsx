@@ -200,6 +200,8 @@ const LoginSignupPopup = ({ setIsModalOpen, showAsPopup = true }) => {
                   className="form-control"
                   placeholder="Password"
                   required
+
+                  
                 />
                 <button
                   type="button"

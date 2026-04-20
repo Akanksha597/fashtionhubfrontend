@@ -34,7 +34,7 @@ const Selling = (category) => {
     navigate(`/productdescription/${productId}`);
   };
   return (
-    <div className="container " >
+    <div className="container py-5" >
 
      
           <h3 style={{textAlign:"center", marginTop:"30px"}}>Similar Products</h3>
