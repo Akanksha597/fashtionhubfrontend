@@ -1,0 +1,22 @@
+@media (min-width: 992px) {
+  .footer-lg-margin {
+    margin-top: 8rem !important;
+
+
+  }
+}
+
+ .footer-lg-margin{
+  background: rgb(0, 0, 0);
+  position: relative;
+  top:0px
+
+ }
+
+
+ @media (max-width: 768px) {
+   .footer-lg-margin{
+        top: -50px!important;
+   }
+
+ }

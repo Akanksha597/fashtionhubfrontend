@@ -1,0 +1,141 @@
+.campaign-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.campaign-card {
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 45%;
+    text-align: center;
+    position: relative;
+    background-image: url("../../assets/image/3 copy 2.png");
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.countdown-days {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.countdown-timer {
+    display: flex;
+    justify-content: space-around;
+    margin: 15px 0;
+}
+
+.countdown-timer div {
+    background-color: white;
+    color: #333;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    flex: 1;
+    margin: 0 30px;
+}
+
+.view-products-btn {
+    background-color: #ff6600;
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.view-products-btn:hover {
+    background-color: darkorange;
+}
+
+.campaign-banner {
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.banner-content {
+    text-align: center;
+}
+
+.banner-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.banner-content p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.ban-content {
+    position: absolute;
+    top: 36%;
+    height: 79px;
+    width: 300px;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(25, 27, 25);
+
+    padding: 20px;
+    border-radius: 8px;
+
+}
+
+
+.ban-content h1 {
+    font-size: 2.5rem;
+}
+
+.ban-content p {
+    font-size: 1.2rem;
+}
+
+
+
+@media (max-width: 768px) {
+    .campaign-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .countdown-timer {
+        display: flex;
+        justify-content: space-around;
+        margin: 15px 0;
+        gap: 20px;
+    }
+
+    .countdown-timer div {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .countdown-days {
+        font-size: 18px;
+    }
+
+    .countdown-timer {
+        display: flex;
+        justify-content: space-around;
+        margin: 15px 0;
+        gap: 20px;
+    }
+
+
+    .view-products-btn {
+        padding: 8px 16px;
+    }
+}

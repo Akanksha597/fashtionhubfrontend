@@ -1,0 +1,26 @@
+.custom-sidebar {
+  background-color: #e6f8ee;
+  min-height: 100%;
+}
+
+.category-title:hover {
+  background-color: #bdf6d6;;
+  border-radius: 6px;
+}
+
+.subcategory-item {
+  padding: 8px 10px;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+  margin-left: 0; 
+}
+
+.subcategory-item:hover {
+  background-color: #bdf6d6;
+}
+
+.subcategory-item.active {
+  background-color: #d9f0df;
+  color: #E57925;
+  font-weight: 600;
+}

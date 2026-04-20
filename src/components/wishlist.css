@@ -1,0 +1,16 @@
+.wishlist-page {
+    padding: 20px;
+  }
+  
+  .wishlist-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+    justify-content: center;
+    overflow-x: hidden; 
+  }
+  
+  .wishlist-items .pro-card {
+    flex: 1 1 300px; 
+    max-width: 300px; 
+  }

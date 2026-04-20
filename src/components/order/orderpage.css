@@ -1,0 +1,56 @@
+
+
+.container {
+    max-width: 800px; 
+    margin: auto; 
+  }
+  
+
+  
+  .border {
+    border-radius: 12px; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .text-success {
+    color: #28a745; 
+  }
+  
+  .img-thumbnail {
+    border: none; 
+  }
+  
+  .ml-3 {
+    margin-left: 1rem; 
+  }
+  
+  .ml-auto {
+    margin-left: auto; 
+  }
+  
+  .order-button {
+    background-color: #0f5f1c; 
+    text-decoration: none;
+    color: aliceblue;
+    height: 40px;
+    border: none;
+  }
+  
+  .btn-outline-success {
+    border-color: #28a745; 
+    color: #28a745; 
+  }
+  
+  .btn-outline-success:hover {
+    background-color: #28a745; 
+    color: white; 
+  }
+  
+  h5 {
+    font-size: 1.25rem; 
+  }
+  
+  h6 {
+    font-size: 1rem; 
+  }
+  

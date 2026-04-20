@@ -1,0 +1,46 @@
+/* ACTIVE BUTTON (selected tab) */
+.btn-signup {
+  background-color: #000000;
+  color: #ffffff;
+  border: 2px solid #000000;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+/* HOVER on ACTIVE */
+.btn-signup:hover {
+  background-color: #222222;
+  border-color: #222222;
+  color: #ffffff;
+}
+
+/* INACTIVE BUTTON */
+.btnsuccess {
+  background-color: transparent;
+  color: #000000;
+  border: 2px solid #000000;
+  transition: 0.3s;
+}
+
+/* HOVER on INACTIVE */
+.btnsuccess:hover {
+  background-color: #000000;
+  color: #ffffff;
+  border-color: #000000;
+}
+
+/* FIX MODAL */
+.modal-header {
+  width: 100% !important;
+  display: flex;
+}
+
+.modal-content {
+  margin-top: 150px;
+}
+
+@media (max-width: 576px) {
+  .modal-content {
+    margin-top: 0px;
+  }
+}

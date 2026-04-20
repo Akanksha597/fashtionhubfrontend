@@ -1,0 +1,29 @@
+.healthy-banner {
+  /* Add your background image here */
+  background-image: url('../../assets/image/fruit.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Responsive typography */
+@media (max-width: 768px) {
+  .healthy-banner h1 {
+    font-size: 2.5rem;
+  }
+  .healthy-banner h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .healthy-banner h1 {
+    font-size: 2rem;
+  }
+  .healthy-banner h2 {
+    font-size: 1.5rem;
+  }
+  .healthy-banner .col {
+    padding-left: 2rem !important;
+  }
+}

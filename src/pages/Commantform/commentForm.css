@@ -1,0 +1,39 @@
+.comment-container {
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px;
+
+  }
+  
+  .comment-form {
+    width: 100%;
+    max-width: 600px;
+
+  }
+  
+  .form-row {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  
+  .form-group {
+    flex: 1;
+  }
+  .comment{
+    margin-top: 1rem !important;
+    background-color: green;
+    color: aliceblue;
+    border: none;
+    padding: 7px;
+}
+  
+  @media (max-width: 768px) {
+    .form-row {
+      flex-direction: column;
+    }
+    .form-group{
+      text-align: left;
+  
+    }
+  }

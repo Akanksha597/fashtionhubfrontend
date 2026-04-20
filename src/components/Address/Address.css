@@ -1,0 +1,78 @@
+
+.address-container {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+
+}
+
+
+.add-address-btn {
+  background-color: #156126;
+  color: white;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  border: none;
+}
+
+.add-address-btn:hover {
+  background-color: #0056b3;
+  color: white;
+}
+
+
+.custom-modal .modal-content {
+  border-radius: 10px;
+  padding: 12px;
+  margin-top: 150px;
+
+}
+
+.custom-modal .modal-header {
+  border-bottom: none;
+  text-align: center;
+
+}
+
+.modal-header {
+  border-bottom: none;
+  text-align: center;
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+}
+
+.custom-modal .modal-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.custom-modal .close {
+  font-size: 24px;
+  color: #000;
+}
+
+.custom-modal .form-group {
+  margin-bottom: 10px;
+}
+
+.add-address-submit {
+  background-color: #28a745;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+}
+
+.add-address-submit:hover {
+  background-color: #218838;
+}
+
+

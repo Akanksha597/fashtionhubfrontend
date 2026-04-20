@@ -1,0 +1,347 @@
+.pro-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  width: 350px;
+  /* margin: 10px; */
+  cursor: pointer;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px
+}
+
+.listed-price {
+  color: #000000;
+  font-weight: 500;
+}
+
+.product-pricing {
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  margin-top: 5px;
+}
+
+.image-pro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  margin-top: 14px;
+
+}
+
+.product-info {
+  padding:8px;
+
+  flex-grow: 1;
+
+
+}
+
+.product-title {
+  font-size: 1.4em;
+
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+
+}
+
+
+
+.product-price {
+  font-size: 1.3em;
+  color: #000;
+  padding: 10px;
+
+}
+
+.product-old-price {
+  text-decoration: line-through;
+  color: #999;
+
+}
+
+
+.savings-text {
+  color: #000000;
+  font-weight: bold;
+}
+
+.size-dropdown {
+
+  display: flex;
+  flex-direction: column;
+
+}
+
+.size-dropdown label {
+
+  font-size: 1em;
+  color: #333;
+}
+
+.size-dropdown select {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+  width: 100%;
+
+}
+
+.product-discount {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #E87D03;
+  color: #fff;
+  padding: 4px;
+  font-size: 0.7em;
+}
+
+
+
+
+.add-to-button,
+.buy-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 40px;
+  /* Set a fixed height for the button */
+  padding: 0 20px;
+  font-size: 13px;
+  background-color: #218838;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  border-radius: 5px;
+  color: white;
+  white-space: nowrap;
+
+}
+
+.add-to-button:hover {
+  background-color: #1e7e34;
+  transform: scale(1.05);
+}
+
+.fasshopping {
+  font-size: 30px;
+}
+
+
+/* .add-to-button {
+ border: 1px solid #ccc;
+} */
+
+.spinner {
+  border: 2px solid whitesmoke;
+  border-left-color: whitesmoke;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  animation: spin 1s linear infinite;
+}
+
+
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.add-to-button:disabled {
+  background-color: #000000;
+  cursor: not-allowed;
+  color: whitesmoke;
+}
+
+.add-to-button:hover:not(:disabled) {
+  background-color: #000000;
+  transform: scale(1.05);
+  color: whitesmoke;
+
+}
+
+
+
+
+
+.button-container {
+  display: flex;
+  gap: 20px;
+  /* Space between buttons */
+  margin-top: 10px;
+  /* Adjust as needed */
+  justify-content: center;
+  justify-content: space-between;
+}
+
+.buy-link {
+  text-decoration: none;
+  color: white;
+}
+
+
+.size-scroll {
+  -webkit-overflow-scrolling: touch;
+}
+
+.size-scroll::-webkit-scrollbar {
+  height: 6px;
+  /* thin scrollbar for horizontal */
+}
+
+.size-scroll::-webkit-scrollbar-thumb {
+  background: #bbb;
+  border-radius: 10px;
+}
+
+.size-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Scroll container */
+.size-scroll {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 10px;
+  overflow-x: auto;
+  padding-bottom: 6px;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  /* Firefox hide scrollbar */
+}
+
+.size-scroll::-webkit-scrollbar {
+  display: none;
+  /* Chrome/Safari/Edge hide scrollbar */
+}
+
+/* Size chip button */
+.size-chip {
+  flex: 0 0 auto;
+  padding: 6px 14px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  background: #f9f9f9;
+  color: #333;
+  font-size: 14px;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Hover effect */
+.size-chip:hover {
+  background: #ffe082;
+  border-color: #fbc02d;
+}
+
+/* Active/Selected chip */
+.size-chip.active {
+  background: #000000;
+  border: 2px solid #000000;
+  color: #ffffff;
+  font-weight: bold;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+
+@media (max-width: 768px) {
+
+  .add-to-button,
+  .buy-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 40px;
+    /* Set a fixed height for the button */
+    padding: 0 20px;
+    font-size: 13px;
+    background-color: #218838;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 5px;
+    color: white;
+    white-space: nowrap;
+
+  }
+
+  .pro-card {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .product-image {
+
+    width: 124px;
+    max-width: 150px;
+    height: 114px;
+    object-fit: contain;
+    border-radius: 10px;
+  }
+
+  .product-title {
+    font-size: smaller;
+  }
+
+  .product-price {
+    font-size: 1.2em;
+
+  }
+
+  .product-old-price {
+    font-size: 0.8em;
+  }
+
+
+
+  .size-dropdown select {
+    font-size: 0.9em;
+    padding: 6px;
+  }
+
+  .product-info {
+    margin-top: -20px;
+
+  }
+
+  .product-discount {
+    margin-top: -4px
+  }
+
+  .savings-text {
+    color: #000000;
+    font-size: smaller;
+
+  }
+
+  .add-to-button {
+    font-size: 10px;
+   
+
+  }
+
+  .buy-button {
+    font-size: x-small;
+  }
+}

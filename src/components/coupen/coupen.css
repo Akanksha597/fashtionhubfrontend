@@ -1,0 +1,36 @@
+.coupon-banner {
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(20, 72, 54);
+}
+
+.banner-content {
+  text-align: center;
+}
+
+.coupen-card {
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 45%;
+  text-align: center;
+  position: relative;
+  background-image: url("../../assets/image/coupenBG.png");
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.banner-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.banner-content p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}

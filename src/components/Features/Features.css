@@ -1,0 +1,67 @@
+.infobar-container {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px 20px;
+  width: 80%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.infobar-scroll {
+  display: flex;
+  flex-wrap: nowrap;     /* keep items in one row */
+  overflow-x: auto;      /* enable horizontal scroll */
+  scrollbar-width: thin; /* thin scrollbar for Firefox */
+}
+
+.infobar-scroll::-webkit-scrollbar {
+  height: 6px;
+}
+
+.infobar-scroll::-webkit-scrollbar-thumb {
+  background-color: rgba(0,0,0,0.2);
+  border-radius: 3px;
+}
+
+.infobar-item {
+  flex: 0 0 auto;        /* prevent shrinking */
+  padding: 10px 15px;
+  border-right: 1px solid #ddd;
+  min-width: 220px;      /* fixed min width for scrolling */
+}
+
+.infobar-item:last-child {
+  border-right: none;
+}
+
+.infobar-icon {
+  font-size: 28px;
+  color: #14532d;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.infobar-title {
+  font-weight: 600;
+  color: #14532d;
+  margin-bottom: 2px;
+}
+
+.infobar-sub {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+}
+@media (max-width: 768px) {
+  .infobar-container {
+    width: 90%;
+    padding: 8px;
+  }
+  .infobar-icon {
+    font-size: 20px;
+  }
+
+}

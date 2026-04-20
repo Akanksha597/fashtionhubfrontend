@@ -1,0 +1,33 @@
+.promo-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 200px;
+  overflow: hidden;
+}
+
+.promo-veg {
+  background-color: #0c3d23; /* Dark green */
+  color: white;
+}
+
+.promo-fruits {
+  background-color: #ffeb99; /* Light yellow */
+  color: #333;
+}
+
+.highlight {
+  color: #fdd835; /* Yellow for Vegetables */
+  font-weight: bold;
+}
+
+.highlight-fruit {
+  color: #d35400; /* Orange for Fruits */
+  font-weight: bold;
+}
+
+.promo-card button {
+  border-radius: 6px;
+  font-weight: bold;
+  margin-top: 10px;
+}

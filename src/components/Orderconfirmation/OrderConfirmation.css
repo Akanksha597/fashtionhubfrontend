@@ -1,0 +1,26 @@
+
+  
+  .order-confirmation h2 {
+    font-size: 2rem;
+  }
+  
+  .order-confirmation .order-details {
+    background-color: #f8f9fa;
+  }
+  
+  .order-confirmation .btn-success {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+  
+  .order-confirmation footer {
+    font-size: 0.9rem;
+    color: #6c757d;
+  }
+.order-confirm{
+    display: flex;
+    justify-content: space-between;
+}
+.orderimage{
+    width: 250px;
+}

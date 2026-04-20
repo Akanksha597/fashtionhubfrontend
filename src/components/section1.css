@@ -1,0 +1,27 @@
+
+
+.features-overlay {
+  position: absolute;
+  bottom: -95px; /* how far down it overlaps the banner */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+}
+
+.features-overlay .infobar-container {
+  width: 80%;
+
+}
+
+@media (max-width: 768px) {
+  .features-overlay .infobar-container {
+    width: 90%;
+
+  }
+  .features-overlay {
+     bottom: -130px; /* how far down it overlaps the banner */ 
+  }
+}

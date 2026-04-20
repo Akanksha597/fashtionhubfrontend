@@ -1,0 +1,281 @@
+.product-description-page {
+  padding: 20px;
+  background-color: #f8f9fa; 
+  margin-bottom: 100px;
+}
+
+
+.section-image {
+  text-align: center;
+  margin-bottom: 20px;
+  background-color: #dee2e6;
+
+}
+.review-stars {
+  margin-top: -37px; 
+  font-size: 1.5rem; 
+}
+
+.star {
+  cursor: pointer; 
+}
+
+.main-image {
+  width: 90%;
+  height: auto;
+  max-height: 700px; 
+  border-radius: 10px;
+  
+}
+
+/* .main-image:hover {
+  transform: scale(1.05);
+} */
+.zoom-container {
+  display: inline-block;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.zoom-image {
+  transition: transform 0.3s ease-in-out;
+}
+
+.zoom-container:hover .zoom-image {
+  transform: scale(1.5);
+}
+.thumbnail-images {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.fa-solid, .fas {
+  font-weight: 900;
+  color: green;
+}
+.thumbnail {
+  width: 120px;
+  height: 80px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.thumbnail:hover {
+  border-color: #007bff;
+}
+
+
+.details-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.current-price {
+  font-size: 1.8em;
+  color: #333; 
+  font-weight: bold;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: #999;
+  margin-left: 10px;
+}
+
+.discount {
+  color: #ff0000;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+
+.sizes-section {
+  margin-top: 15px;
+}
+
+.variant-btn {
+  display: block;
+  font-size: 1em;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+
+.action-buttons .btn {
+  margin-right: 10px;
+  border-radius: 5px;
+ 
+  background-color: green;
+}
+
+
+.features-section {
+  margin-top: 20px;
+}
+
+.features-section h5 {
+  margin-bottom: 8px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+/* Ensure the row adjusts based on content */
+.description-container {
+  max-height: none; /* Allow height to adjust naturally */
+  overflow: visible; /* Ensure content doesn't get hidden */
+  padding-bottom: 20px; /* Optional: space at the bottom */
+  padding-top: 10px; /* Optional: space at the top */
+}
+
+/* Optional: If you want to limit the height and make it scrollable */
+.description-container {
+  max-height: 500px; /* Set a max height (can be adjusted as needed) */
+  overflow-y: auto; /* Scroll vertically if the content exceeds max-height */
+}
+
+.fas {
+  color: green;
+}
+
+.variant-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image-section {
+  display: flex;
+  gap: 15px;
+}
+
+.thumbnail-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.thumbnail-img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.active-thumb {
+  border: 2px solid red;
+}
+
+.main-image-container {
+  flex: 1;
+  background: #f5f5f5;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.variant-container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.variant-card {
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .image-section {
+    flex-direction: column;
+  }
+
+  .thumbnail-list {
+    flex-direction: row;
+    overflow-x: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .main-image {
+    max-width: 100%;
+    max-height: 450px;
+  }
+
+  .thumbnail {
+    width: 100px;
+    height: 70px;
+  }
+
+  .features-section h5 {
+    font-size: 1.2em;
+    margin-top: 5px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+   
+  }
+  .variant-container{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+}
+
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .main-image {
+    max-width: 90%;
+    max-height: 550px;
+  }
+
+  .thumbnail {
+    width: 130px;
+    height: 90px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+   
+  }
+
+}
+
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .main-image {
+    max-width: 90%;
+    max-height: 600px;
+  }
+
+  .thumbnail {
+    width: 150px;
+    height: 100px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    
+  }
+}
+
+
+@media (min-width: 992px) {
+  .main-image {
+    max-width: 90%;
+    max-height: 700px;
+  }
+
+  .thumbnail {
+    width: 160px;
+    height: 110px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    
+  }
+}

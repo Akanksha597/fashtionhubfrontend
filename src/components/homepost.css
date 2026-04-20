@@ -1,0 +1,93 @@
+
+.card-img-top2 {
+  width: 100%; 
+  height: auto; 
+  object-fit: cover; 
+  border-radius: 10px 10px 0 0; 
+  display: block; 
+  margin: 0 auto;
+}
+
+
+.card11 {
+  border: none; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s, transform 0.3s; 
+}
+
+.card11:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+  transform: scale(1.02); 
+}
+
+.card-body {
+  padding: 20px;
+  text-align: left;
+}
+
+.card-title {
+  font-size: 1.25rem; 
+  font-weight: bold;
+  margin-bottom: 10px; 
+  color: black;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #666; 
+  list-style-type: disc; 
+  padding-left: 20px; 
+  margin-bottom: 0;
+}
+
+.card-text li {
+  margin-bottom: 10px; 
+}
+
+
+
+
+@media (max-width: 768px) {
+.card-body {
+  padding: 15px; 
+}
+
+.card-title {
+  font-size: 1.1rem; 
+}
+
+.card-text {
+  font-size: 0.9rem; 
+}
+
+
+.card11 {
+  margin-bottom: 1.5rem;
+}
+}
+
+
+@media (max-width: 576px) {
+.card-body {
+  padding: 10px;
+}
+
+.card-title {
+  font-size: 1rem; 
+}
+
+.card-text {
+  font-size: 0.85rem;
+}
+
+.card11 {
+  box-shadow: none; 
+  transform: none; 
+}
+
+
+.carousel-control-prev, .carousel-control-next {
+  width: 10%; 
+}
+}

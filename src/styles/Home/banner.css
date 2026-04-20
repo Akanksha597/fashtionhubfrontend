@@ -1,0 +1,8 @@
+.organic-banner {
+  background-image: url('../../../assets/Home/bannerLogo.png');
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: contain;
+  min-height: 350px;
+}
+

@@ -1,0 +1,159 @@
+
+.product-display {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 10px; 
+  justify-content: space-between;
+  
+}
+
+
+.product-section {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s, transform 0.3s;
+ 
+}
+.product-details{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 1rem;
+}
+
+.product-section:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: scale(1.02);
+}
+
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.section-header h3 {
+  font-size: 2.0rem;
+ text-align: center;
+  transition: color 0.3s;
+  margin-top: 20px;
+}
+
+.section-header h3:hover {
+  color: #f58220;
+}
+
+
+.view-more {
+  color: #f58220;
+  text-decoration: none;
+  font-size: 1.5rem; 
+  transition: color 0.3s, text-decoration 0.3s;
+}
+
+
+.view-more:hover {
+  color: #e06d1b;
+  text-decoration: underline;
+}
+.wraper{
+  flex-flow: row;
+}
+
+.pro-cardss {
+
+  flex-direction: row; 
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #fff;
+  height: 100%; 
+}
+
+
+.product-image {
+
+  height: 120px; 
+  object-fit: contain; 
+  border-radius: 10px;
+
+}
+
+
+.product-details {
+  flex: 1; 
+  font-size: 1.125rem; 
+  color: #e06d1b;
+  text-align: center;
+}
+
+.product-details h4 {
+
+    font-weight: bold;
+}
+
+.product-details p {
+  margin: 5px 0;
+    font-size: 1.125rem;
+    color: #212529;
+    font-weight: bold;
+}
+
+
+
+
+.home-sellingp {
+  display: flex;
+  justify-content: center;
+  gap:20px;
+  width: 100%;
+  margin: 1px 0;
+}
+
+.custom-outline-success {
+  color: rgb(27, 94, 32);              /* text color */
+  border: 2px solid rgb(27, 94, 32);   /* border color */
+  background-color: transparent;
+  transition: all 0.3s ease-in-out;
+  font-weight: 500;
+}
+
+.custom-outline-success:hover {
+  background-color: rgb(27, 94, 32);   /* hover background */
+  color: #fff;                         /* hover text */
+}
+
+
+@media (max-width: 768px) {
+  .product-display {
+    flex-direction: column;
+  }
+  .section-header h3 {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: black;
+    margin-top: 20px;
+}
+.view-more {
+  color: #f58220;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+  .pro-cardss {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-image {
+   
+    height: 107px;
+    object-fit: contain;
+    border-radius: 10px;
+    margin-right: 0;
+
+  }
+}

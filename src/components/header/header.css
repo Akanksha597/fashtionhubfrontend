@@ -1,0 +1,36 @@
+.mobile-bottom-nav {
+  height: 60px;
+  z-index: 1050;
+}
+
+.mobile-bottom-nav .nav-link {
+  color: #444;
+}
+
+.mobile-bottom-nav .nav-link.active {
+  color: #ff6600;
+}
+
+.search-bar {
+  max-width: 200px;
+}
+
+.search-suggestions {
+  position: absolute;
+  background: white;
+  width: 100%;
+  z-index: 1051;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #ddd;
+}
+
+.search-suggestions li {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.search-suggestions li:hover {
+  background-color: #f5f5f5;
+}

@@ -1,0 +1,40 @@
+.Blog-D {
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.Blogd-p {
+    text-align: center;
+}
+
+.Blogd-read {
+    text-decoration: none;
+}
+
+.container-Searcheng {
+   position: relative;
+   padding: 100px 0;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.blog-btn {
+    justify-content: center;
+    text-align: center;
+}
+.read-more{
+ 
+    background-color: #2D7600;
+    color: white;
+    padding:10px 22px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-bottom: 14px;
+}

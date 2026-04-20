@@ -1,0 +1,119 @@
+ .card-container{
+  max-width: 1200px; 
+  margin: 0 auto;
+  padding: 0 15px; 
+
+ }
+ .card1 {
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url("../assets/image/Poster 1.png");
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  color: #ffffff; 
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.text-section {
+  flex: 2;
+  padding-right: 20px;
+  color: #ffffff; 
+}
+
+.text-section h4 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  background-color: rgba(255, 255, 255, 0.7); 
+  color: #0b0909; 
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.text-section p {
+  font-size: 16px;
+
+  color: #ffffff;
+  margin-bottom: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+ 
+  -webkit-box-orient: vertical;
+}
+
+.image-section {
+  flex-shrink: 0;
+}
+
+.image-section img {
+  max-width: 200px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.shop-button {
+  background-color: #f7fbf7;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease; 
+}
+
+.shop-button:hover {
+  background-color: #45a049; 
+}
+
+.Home-Card{
+  background-color: #ff8800;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 15px;
+}
+
+@media (max-width: 768px) {
+  .card1 {
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .text-section {
+    padding: 10px;
+  }
+
+  .image-section {
+    margin-top: 10px;
+  }
+
+  .image-section img {
+    max-width: 176px;
+  }
+
+  .shop-button {
+    width: 100%;
+    margin-top: 15px;
+  }
+}

@@ -1,0 +1,7 @@
+.farm-freshness-banner {
+  /* Add your background image here */
+  background-image: url("../../assets/About/banner.png");
+  background-size: cover;
+  background-position: center;
+  height: 550px;
+}

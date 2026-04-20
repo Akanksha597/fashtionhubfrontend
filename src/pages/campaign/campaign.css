@@ -1,0 +1,31 @@
+.campaign-header {
+  background-image: url('your-header-background-image.jpg');
+  background-size: cover;
+}
+
+
+
+.banner-content {
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  border-radius: 8px;
+
+}
+
+.banner-content h1 {
+  font-size: 2.5rem;
+}
+
+.banner-content p {
+  font-size: 1.2rem;
+}
+
+.countdown {
+  font-weight: bold;
+}
