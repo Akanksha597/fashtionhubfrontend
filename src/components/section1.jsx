@@ -21,25 +21,19 @@ const Section1 = () => {
     <div className="banner-section position-relative">
       <Carousel indicators={false} controls={false} interval={2000}>
         {banners.map((banner) => (
-       <Carousel.Item key={banner._id}>
-  <Link to={banner.redirectLink || '/product'}>
-    <img
-      src={banner.bannerImage}
-      alt="Banner"
-      className="d-block w-100 img-fluid"
-      style={{
-      
-        maxHeight: '600px', // adjust as needed
-        backgroundColor: '#f8f8f8' // fills empty space on smaller screens
-      }}
-    />
-  </Link>
-</Carousel.Item>
-
+          <Carousel.Item key={banner._id}>
+            <Link to={banner.redirectLink || '/product'}>
+              <img
+                src={banner.bannerImage}
+                alt="Banner"
+                className="banner-img"
+              />
+            </Link>
+          </Carousel.Item>
         ))}
       </Carousel>
 
-      {/* Features overlay inside banner */}
+      {/* Features overlay */}
       {/* <div className="features-overlay">
         <Features />
       </div> */}

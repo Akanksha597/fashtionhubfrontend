@@ -1,8 +1,42 @@
+.banner-section {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* SAME HEIGHT FOR ALL BANNERS */
+.banner-img {
+  width: 100%;
+  height: 500px;        /* Fixed same height */
+  object-fit: cover;    /* Crop image properly */
+  display: block;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .banner-img {
+    height: 450px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .banner-img {
+    height: 280px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .banner-img {
+    height: 220px;
+  }
+}
 
 
+/* Features Overlay */
 .features-overlay {
   position: absolute;
-  bottom: -95px; /* how far down it overlaps the banner */
+  bottom: -95px;
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
@@ -13,15 +47,14 @@
 
 .features-overlay .infobar-container {
   width: 80%;
-
 }
 
 @media (max-width: 768px) {
   .features-overlay .infobar-container {
     width: 90%;
-
   }
+
   .features-overlay {
-     bottom: -130px; /* how far down it overlaps the banner */ 
+    bottom: -130px;
   }
 }
